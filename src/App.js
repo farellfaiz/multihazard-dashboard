@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import { Box } from '@chakra-ui/react'
+import '@fontsource/raleway/'
+import '@fontsource/ubuntu/'
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box w='100%' bg='gray.50' fontFamily='Ubuntu'>
+      <Navigation />
+      <Hero />
+      <Box h='1000px' w='100%'>
+      </Box>
+      <Footer />
+    </Box>
   );
 }
 
