@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFileContract, FaGlobeAsia } from "react-icons/fa";
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -65,6 +66,7 @@ const Hero = () => {
               penginderaan jauh (remote sensing) multisumber berbasis Machine
               Learning
             </Text>
+            <Link to='/dashboard'>
             <Button
               bgGradient="linear(to-br, #FF512F, #F09819)"
               _hover={{ bgGradient: "linear(to-br, #F09819, #FF512F)" }}
@@ -76,15 +78,18 @@ const Hero = () => {
             >
               Dashboard
             </Button>
-            <Button
-              ml="15px"
-              size="lg"
-              leftIcon={<FaFileContract />}
-              // variant='ghost'
-              mt="6"
-            >
-              Research
-            </Button>
+            </Link>
+            <Link to="/research">
+              <Button
+                ml="15px"
+                size="lg"
+                leftIcon={<FaFileContract />}
+                // variant='ghost'
+                mt="6"
+              >
+                Research
+              </Button>
+            </Link>
           </Box>
           <Box
             boxSize={{

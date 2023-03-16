@@ -1,11 +1,6 @@
-import {
-  chakra,
-  Stack,
-  Container,
-  Box,
-  Button,
-} from "@chakra-ui/react";
+import { chakra, Stack, Container, Box, Button } from "@chakra-ui/react";
 import { FaFileContract, FaGlobeAsia } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -47,29 +42,33 @@ const Banner = () => {
         spacing={{ base: 0, sm: 3 }}
         w={{ base: "100%", sm: "auto" }}
       >
-        <Button
-          color="white"
-          variant="solid"
-          size="lg"
-          rounded="md"
-          mb={{ base: 2, sm: 0 }}
-          lineHeight={1}
-          bgGradient="linear(to-br, #FF512F, #F09819)"
-          _hover={{ bgGradient: "linear(to-br, #F09819, #FF512F)" }}
-          _active={{ bgGradient: "linear(to-br, #bd7713, #cc4025)" }}
-          leftIcon={<FaGlobeAsia />}
-        >
-          Lihat dashboard
-        </Button>
-        <Button
-          size="lg"
-          rounded="md"
-          mb={{ base: 2, sm: 0 }}
-          leftIcon={<FaFileContract />}
-          lineHeight={1}
-        >
-          Baca riset lengkap
-        </Button>
+        <Link to="/dashboard">
+          <Button
+            color="white"
+            variant="solid"
+            size="lg"
+            rounded="md"
+            mb={{ base: 2, sm: 0 }}
+            lineHeight={1}
+            bgGradient="linear(to-br, #FF512F, #F09819)"
+            _hover={{ bgGradient: "linear(to-br, #F09819, #FF512F)" }}
+            _active={{ bgGradient: "linear(to-br, #bd7713, #cc4025)" }}
+            leftIcon={<FaGlobeAsia />}
+          >
+            Lihat dashboard
+          </Button>
+        </Link>
+        <Link to="/research">
+          <Button
+            size="lg"
+            rounded="md"
+            mb={{ base: 2, sm: 0 }}
+            leftIcon={<FaFileContract />}
+            lineHeight={1}
+          >
+            Baca riset lengkap
+          </Button>
+        </Link>
       </Stack>
     </Stack>
   );

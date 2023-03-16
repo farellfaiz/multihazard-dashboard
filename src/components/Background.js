@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom';
 import {
   Container,
   Stack,
@@ -6,7 +6,6 @@ import {
   Image,
   Skeleton,
   Box,
-  Link,
   Heading,
   Accordion,
   AccordionItem,
@@ -102,8 +101,8 @@ const Background = () => {
               ))}
             </Accordion>
           </Box>
-          <Link href="#" fontSize="sm" color="blue.400">
-            Pelajari lebih lengkap →
+          <Link to='/research'>
+            <Text fontSize="sm" color="blue.400">Pelajari lebih lengkap →</Text>
           </Link>
         </Stack>
       </Stack>
