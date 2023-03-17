@@ -73,27 +73,27 @@ const absoluts = [
     {
       image: "/research/relsr.png",
       legend:
-        "Probabilitas gempa",
+        "Sangat rendah",
     },
     {
       image: "/research/relr.png",
       legend:
-        "Probabilitas banjir",
+        "Rendah",
     },
     {
       image: "/research/relsed.png",
       legend:
-        "Probabilitas banjir",
+        "Sedang",
     },
     {
       image: "/research/relt.png",
       legend:
-        "Probabilitas banjir",
+        "Tinggi",
     },
     {
       image: "/research/relst.png",
       legend:
-        "Probabilitas longsor",
+        "Sangat tinggi",
     }
   ];
 
